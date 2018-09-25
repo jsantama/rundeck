@@ -10,7 +10,7 @@
     <scheduleEnabled>true</scheduleEnabled>
     <sequence keepgoing='false' strategy='node-first'>
       <command>
-        <exec>echo "Hola mundo"</exec>
+        <exec>echo "Hola mundo, cambiando lo que se puede"</exec>
       </command>
     </sequence>
     <uuid>48aa3531-ee0e-4b01-b115-99c8688cd437</uuid>
