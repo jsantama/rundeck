@@ -1,0 +1,15 @@
+name: helloworld
+version: 1.0
+rundeckPluginVersion: 1.2
+author: Warhawk
+date: 01-02-2018 (ISO8601)
+providers:
+  - name: helloworld
+    service: RemoteScriptNodeStep
+    title: HELLOWORLD
+    description: test of custom plugin
+    plugin-type: script
+    script-interpreter: /bin/bash
+    script-file: hello.config
+    script-args:
+

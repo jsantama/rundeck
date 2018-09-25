@@ -1,0 +1,21 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>The second step for job reference example.</description>
+    <executionEnabled>true</executionEnabled>
+    <id>73963525-36ef-4fb9-bd01-3683fa364f40</id>
+    <loglevel>INFO</loglevel>
+    <name>JobReferenceDESTINY</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <jobref name='JobReferenceORIGIN' nodeStep='true'>
+          <arg line='-option1 -p' />
+          <uuid>067221e4-21eb-4c69-ba93-9b5f2c2dfea3</uuid>
+        </jobref>
+      </command>
+    </sequence>
+    <uuid>73963525-36ef-4fb9-bd01-3683fa364f40</uuid>
+  </job>
+</joblist>

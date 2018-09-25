@@ -1,0 +1,35 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>Regex and data passing demo.</description>
+    <executionEnabled>true</executionEnabled>
+    <id>a0daf1e3-e918-43dc-b232-bc46a7a287b6</id>
+    <loglevel>INFO</loglevel>
+    <name>Regex</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <exec>env</exec>
+      </command>
+      <command>
+        <exec>echo ${data.SHELL}</exec>
+      </command>
+      <command>
+        <exec>echo ${data.USER}</exec>
+      </command>
+      <command>
+        <exec>echo ${data.PWD}</exec>
+      </command>
+      <pluginConfig>
+        <LogFilter type='key-value-data'>
+          <config>
+            <logData>true</logData>
+            <regex>^(SHELL|USER|PWD)\s*=\s*(.+)$</regex>
+          </config>
+        </LogFilter>
+      </pluginConfig>
+    </sequence>
+    <uuid>a0daf1e3-e918-43dc-b232-bc46a7a287b6</uuid>
+  </job>
+</joblist>

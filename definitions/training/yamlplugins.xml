@@ -1,0 +1,23 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>Programming demo plugin.</description>
+    <executionEnabled>true</executionEnabled>
+    <id>8f9719a7-5268-4ad4-b66e-d193bf8de192</id>
+    <loglevel>INFO</loglevel>
+    <name>YAMLPlugins</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <node-step-plugin type='test.var.config'>
+          <configuration>
+            <entry key='entry1' value='first string' />
+            <entry key='entry2' value='second string' />
+          </configuration>
+        </node-step-plugin>
+      </command>
+    </sequence>
+    <uuid>8f9719a7-5268-4ad4-b66e-d193bf8de192</uuid>
+  </job>
+</joblist>

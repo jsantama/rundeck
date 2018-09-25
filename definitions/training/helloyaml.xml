@@ -1,0 +1,18 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>Hello World Yaml plugin.</description>
+    <executionEnabled>true</executionEnabled>
+    <id>cd10e499-f093-454a-beea-9fd40636576d</id>
+    <loglevel>INFO</loglevel>
+    <name>HelloYAML</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <node-step-plugin type='helloworld' />
+      </command>
+    </sequence>
+    <uuid>cd10e499-f093-454a-beea-9fd40636576d</uuid>
+  </job>
+</joblist>
